@@ -38,30 +38,42 @@
  .links .btn{width:100%;margin-top:5px}
 }
 
-/* Refined compact layout: intentional surfaces, consistent spacing and fewer blank-looking sections */
-body{background:#f5f7f1}
-.nav{background:#fbfcf8;border-bottom-color:#dfe8dc;box-shadow:0 4px 18px #123c2c0b}
-.brand strong,.stat strong,.course-card h3,.visual-caption strong,.admission-box h3,.fee-card h3,.contact-panel h3{color:#123c2c}
-.hero-card{background:#fbfcf8;border:1px solid #e4eadf}
-.pill-icon,.course-card .course-icon,.contact-method .bubble{background:#edf4e9}
-.course-card.business .course-icon{background:#f7eee5}
-.course-card.trade .course-icon{background:#fbf1d7}
-.stats{background:#edf3e9;border-bottom-color:#dce6d8}
-.stat{border-right-color:#d7e2d2}
-.section{padding:70px 0}
-.courses,.contact{background:#edf3e9}
-.gallery-section,.fees{background:#f8faf5}
-.course-card,.gallery-card,.contact-panel,.admission-box{border-color:#dce6d8;box-shadow:0 8px 24px #123c2c0a}
-.course-card:hover,.gallery-card:hover{box-shadow:0 14px 30px #123c2c16;border-color:#c5d8c5}
-.course-list span{background:#edf3e9;color:#355447}
-.visual-caption{border:1px solid #e0e8dc}
-.fee-card{background:#fbfcf8;border-color:#dce6d8}
-.fee-icon{background:#f7edcf}
-.contact-form input,.contact-form select,.contact-form textarea{background:#fbfcf8;border-color:#d5e1d2}
-.outline{border-color:#cbdacb;color:#123c2c;background:#fbfcf8}
-.admission-box{background:#fbfcf8}
-@media(min-width:901px){.hero{padding:76px 0 68px}.section{padding:68px 0}.section-head{margin-bottom:30px}.visual-panel{min-height:390px}}
-@media(max-width:600px){.section{padding:52px 0}.section-head{margin-bottom:26px}.hero-card{padding:20px}.course-card{padding:20px}}
+/* Compact mobile-first layout: less scrolling, clearer sections */
+.section{padding:46px 0}
+.section-head{margin-bottom:24px}
+.hero{padding:58px 0 52px}
+.hero p{margin:16px 0 22px}
+.hero-badges{margin-top:22px}
+.course-grid{gap:14px}
+.course-card{padding:20px}
+.course-card .course-icon{margin-bottom:13px}
+.course-card p{margin-bottom:10px}
+.course-list{gap:6px;margin-top:12px}
+.course-list span{padding:5px 7px;font-size:.74rem}
+.gallery-grid{gap:14px}
+.gallery-card img{height:175px}
+.gallery-card>div{padding:15px}
+.admissions{padding:46px 0}
+.contact .section-head{margin-bottom:22px}
+@media(max-width:900px){.hero{padding:48px 0}.hero-grid{gap:28px}}
+@media(max-width:600px){
+ .section{padding:36px 0}
+ .section-head{margin-bottom:20px}
+ .hero{padding:40px 0}
+ .hero h1{font-size:2.25rem}
+ .hero-card{padding:18px}
+ .course-grid{grid-template-columns:1fr}
+ .course-card{padding:17px}
+ .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .gallery-card img{height:125px}
+ .gallery-card>div{padding:11px}
+ .gallery-card h3{font-size:1rem;margin-bottom:5px}
+ .gallery-card p{font-size:.8rem;line-height:1.45}
+ .admissions{padding:38px 0}
+ .admission-box{padding:18px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:18px}
+ .footer-brand{grid-column:1/-1}
+}
 
 </style>
 </head>
@@ -69,11 +81,7 @@ body{background:#f5f7f1}
 <header class="nav"><div class="wrap navin"><a class="brand" href="#home" aria-label="REHH Institute home"><img class="crest" src="IMG-20261022-WA0008.jpg" alt="REHH Vocational Training Institute badge"><span><strong>REHH VOCATIONAL<br>TRAINING INSTITUTE</strong><small>LEARN A SKILL. BUILD A FUTURE.</small></span></a><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button><nav class="links" id="mainLinks" aria-label="Main navigation"><a href="#about">About</a><a href="#courses">Courses</a><a href="#gallery">Gallery</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a><a class="btn primary" href="#contact">Apply now ↗</a></nav></div></header>
 <main>
 <section class="hero" id="home"><div class="wrap hero-grid"><div><span class="eyebrow">Your future starts with a skill</span><h1>Learn practical skills.<br><span>Shape your future.</span></h1><p>Build confidence, develop hands-on expertise and prepare for real opportunities with REHH Vocational Training Institute. Explore vocational, technical and business courses designed to help you move forward.</p><div class="hero-actions"><a class="btn primary" href="#courses">Explore our courses <span>→</span></a><a class="btn outline" href="#contact">Talk to admissions</a></div><div class="hero-badges"><span><b class="check">✓</b> Practical learning</span><span><b class="check">✓</b> Skills for work</span><span><b class="check">✓</b> Certificate & diploma pathways</span></div></div><aside class="hero-card"><div class="hero-card-top"><div class="mini-logo"><i>🎓</i><span>Start learning at REHH</span></div><span class="open">ADMISSIONS OPEN</span></div><h3>Choose your path</h3><p style="font-size:.91rem;margin-bottom:12px">A course for your talent, ambition and career goals.</p><div class="course-pill"><span class="pill-icon">🛠️</span><span>Vocational & Technical Skills</span></div><div class="course-pill"><span class="pill-icon">💼</span><span>Business & Administration</span></div><div class="course-pill"><span class="pill-icon">💻</span><span>ICT & Digital Skills</span></div><a class="btn primary" href="#contact">Enquire about enrolment →</a></aside></div></section>
-<div class="stats"><div class="wrap stats-grid"><div class="stat"><span class="stat-icon">🧰</span><span><strong>Practical Training</strong><small>Learn by doing</small></span></div><div class="stat"><span class="stat-icon">📚</span><span><strong>Wide Course Choice</strong><small>Technical & business</small></span></div><div class="stat"><span class="stat-icon">🎓</span><span><strong>Certificate & Diploma</strong><small>Learning pathways</small></span></div><div class="stat"><span class="stat-icon">🤝</span><span><strong>Supportive Learning</strong><small>Build your confidence</small></span></div></div></div>
-<section class="section" id="about"><div class="wrap about-grid"><div class="visual-panel" aria-label="Illustration of a training institute campus"><div class="sun"></div><div class="campus-art"><div class="flag"></div><div class="building"><div class="roof"></div><div class="building-name">REHH VOCATIONAL TRAINING INSTITUTE</div><div class="window-row"><span class="window"></span><span class="window"></span><span class="window"></span><span class="window"></span></div><div class="door"></div></div></div><div class="visual-caption"><span><strong>Learn. Practise. Progress.</strong><br><small>Opiyai A · Uganda</small></span><span style="font-size:1.5rem">🌱</span></div></div><div><span class="kicker">About REHH</span><h2>Education that turns potential into practical ability.</h2><p>REHH Vocational Training Institute offers learners a place to develop useful, career-focused skills across vocational, technical and business disciplines. Whether you want to start a trade, strengthen your professional skills or explore a new career, we invite you to take the next step with us.</p><ul class="checklist"><li><span class="tick">✓</span><span>Explore hands-on vocational and technical training.</span></li><li><span class="tick">✓</span><span>Choose from a broad range of business and professional courses.</span></li><li><span class="tick">✓</span><span>Ask our admissions team about available levels and programme schedules.</span></li></ul><a class="btn primary" href="#admissions">Admissions information →</a></div></div></section>
 <section class="section courses" id="courses"><div class="wrap"><div class="section-head center"><span class="kicker">Explore your options</span><h2>Find a course that fits your ambition.</h2><p>Choose from technical trades, creative skills and business programmes. Contact the institute to confirm current intakes, entry requirements and course duration.</p></div><div class="course-grid"><article class="course-card trade"><div class="course-icon">🧵</div><h3>Vocational & Technical</h3><p>Develop practical skills for hands-on work, creative trades and technical careers.</p><div class="course-list"><span>Beauty therapy & cosmetology</span><span>Fashion & design</span><span>Welding & metal fabrication</span><span>Woodwork technology</span><span>Plumbing</span><span>Building & concrete practice</span><span>ICT</span><span>Driving</span><span>Electronics</span><span>Electrical installation</span><span>Automotives</span><span>Events management</span><span>Sweater knitting & jewellery making</span></div></article><article class="course-card business"><div class="course-icon">📊</div><h3>Business Courses</h3><p>Build organisational, financial, communication and management knowledge.</p><div class="course-list"><span>Business administration</span><span>Public administration</span><span>Accounting & finance</span><span>Human resource management</span><span>Social work</span><span>Library science</span><span>Records management</span><span>Secretarial studies</span><span>Tourism</span><span>Journalism & UDBS</span><span>Purchasing & supplies management</span><span>Hotel & institutional catering</span></div></article><article class="course-card"><div class="course-icon">🧑‍🍳</div><h3>Skills for Everyday Opportunity</h3><p>Explore training that can help you prepare for employment, self-employment or further study.</p><div class="course-list"><span>Practical workshops</span><span>Professional skills</span><span>Trade development</span><span>Career growth</span></div><a href="#contact">Ask about a programme →</a></article></div></div></section>
-<section class="section"><div class="wrap"><div class="section-head"><span class="kicker">Why choose us</span><h2>Build more than knowledge.</h2><p>Get ready to put what you learn into practice and take the next step towards your goals.</p></div><div class="why-grid"><article class="why-item"><span class="num">01 / PRACTICE</span><h3>Skills you can use</h3><p>Explore practical, skill-focused training across a range of trades and professional areas.</p></article><article class="why-item"><span class="num">02 / CHOICE</span><h3>Different paths to progress</h3><p>Compare vocational, technical and business options to find a direction that suits you.</p></article><article class="why-item"><span class="num">03 / NEXT STEP</span><h3>Support with enquiries</h3><p>Contact the admissions team to learn about course levels, schedules and joining requirements.</p></article></div></div></section>
-
 <section class="section gallery-section" id="gallery">
   <div class="wrap">
     <div class="section-head center">
